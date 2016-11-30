@@ -1,0 +1,33 @@
+{
+    "name": "dbakl/dbakl-entities",
+    "type": "library",
+    "description": "dbakl Entity Abstraction Pack",
+    "keywords": ["DbAkl", "framework"],
+    "homepage": "https://getgismo.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthias Leuffen",
+            "email": "matthes@leuffen.de"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "dbakl/dbakl-core": "*",
+        "dbakl/dbakl-fsql": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DbAkl\\Entity\\": "/src/Entity/"
+        },
+        "exclude-from-classmap": [
+            "/test/"
+        ]
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
